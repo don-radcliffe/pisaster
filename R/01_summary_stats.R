@@ -14,3 +14,11 @@ head(pisaster_data)
 
 ## calculate mean counts across all years, sites, and plots
 mean_count <- mean(pisaster_data$count)
+
+##### Reprex code #####
+
+pis_short <- head(pisaster_data, 3)
+pis_short
+mean(pis_short$count)
+
+dput(pisaster_data[1:3,])

@@ -1,0 +1,22 @@
+---
+title: "pisaster_disaster"
+author: "Don Radcliffe"
+date: "2/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reprex)
+```
+
+```{r data}
+pisaster_disaster <- structure(list(2019, 2019, 2019, "a", "a", "a", 1L, 2L, 3L, 6L, 
+    10L, 13L), .Dim = 3:4, .Dimnames = list(NULL, c("year", "site", 
+"plot", "count")))
+pisaster_disaster
+```
+
+```{r mean}
+mean(pisaster_disaster$count)
+```
